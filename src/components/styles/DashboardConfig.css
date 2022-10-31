@@ -1,0 +1,221 @@
+.config-main{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    height: 750px;
+    background-image: url(../assets/Dashboard\ Login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-direction: row;
+    gap: 70px;
+    overflow: hidden; 
+    font-family: Inter;
+}
+.config-minting-div{
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    left: 10%;
+    top:4%;
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+    border-radius: 20px;
+    flex-direction: row;
+}
+.xwallet{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    left: 6px;
+    top: 10px;
+}
+.config-div{
+    position: absolute;
+    width: 80%;
+    height: 48%;
+    left: 10%;
+    top:48%;
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+    border-radius: 20px;
+    flex-direction: row;
+}
+.config-title{
+    position: absolute;
+    top:2%;
+    left:5%;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+.input-title1{
+    position: absolute;
+    top:10%;
+    left:5%;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1em; 
+}
+.config-input1-div{
+    position: absolute;
+    top:18%;
+    left:5%;
+}
+.input1{
+    border: 1px solid #0f4658;
+    background-color: transparent;
+    border-radius: 16px;
+    width: 400px;
+    height: 40px;
+}
+.title2{
+    position: absolute;
+    top:32%;
+    left:5%;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1em; 
+}
+.config-subtitle{
+    position: absolute;
+    top:39%;
+    left:5%;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.1em; 
+}
+.title3{
+    position: absolute;
+    top:52%;
+    left:5%;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+.config-subtitle2{
+    position: absolute;
+    top:60%;
+    left:5%;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+.config-subtitle3{
+    position: absolute;
+    top:70%;
+    left:15%;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+.config-input2-div{
+    position: absolute;
+    top:80%;
+    left:5%; 
+}
+.config-wallet-connect-div{
+    position: absolute;
+    top:37%;
+    left:45%;
+}
+.config-Xwallet-connect-div{
+    position: absolute;
+    top:57%;
+    left:45%;
+}
+.config-set-wallet-connect-div{
+    position: absolute;
+    top:79%;
+    left:45%;
+}
+.config-image-div{
+    position: absolute;
+    left:70%;
+    top: 20%;
+}
+.solar-image{
+    width: 90%;
+    height: 70%;
+}
+@media screen and (max-width: 420px){
+    .config-main{
+        height: 896px;
+    }
+    .config-minting-div{
+        position: absolute;
+        width: 80%;
+        height: 27%;
+        left: 10%;
+        top:4%;
+    }
+    .config-div{
+        position: absolute;
+        width: 80%;
+        height: 63%;
+        left: 10%;
+        top:35%;
+    }
+    .config-image-div{
+        display: none;
+    }
+    .input1{
+        border: 1px solid #0f4658;
+        background-color: transparent;
+        border-radius: 16px;
+        width: 300px;
+        height: 40px;
+    }
+    .input-title1{
+        position: absolute;
+        top:8%; 
+    }
+    .config-input1-div{
+        position: absolute;
+        top:15%;
+        left:5%;
+    }
+    .config-wallet-connect-div{
+        position: absolute;
+        top:39%;
+        left:25%;
+    }
+    .title2{
+        top:25%
+    }
+    .config-subtitle{
+        top:30%
+    }
+    .title3{
+        top:48%
+    }
+    .config-subtitle2{
+        top:54%
+    }
+    .config-Xwallet-connect-div{
+        top:63%;
+        left:25%
+    }
+    .config-subtitle3{
+        top:73%;
+        left:46%
+        
+    }
+    .config-input2-div{
+        top:79%
+    }
+    .config-set-wallet-connect-div{
+        top:89%;
+        left: 25%;
+
+    }
+}
