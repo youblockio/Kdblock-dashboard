@@ -1,0 +1,273 @@
+.setting-main-div{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    height: 750px;
+    background-image: url(../assets/Dashboard\ Login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-direction: row;
+    gap: 70px;
+    overflow: hidden;
+    font-family: Inter;
+}
+.swap-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+    border-radius: 14px;
+    position: absolute;
+    left:22%;
+    top:10%;
+    width: 10%;
+    height: 20%;
+    text-align: center;
+}
+.question-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+    border-radius: 14px;
+    position: absolute;
+    left:49%;
+    top:10%;
+    width: 10%;
+    height: 20%;
+    text-align: center;
+}
+.headset-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+    border-radius: 14px;
+    position: absolute;
+    left:76%;
+    top:10%;
+    width: 10%;
+    height: 20%;
+    text-align: center;
+}
+.setting-left-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+    border-radius: 14px;
+    position: absolute;
+    top:35%;
+    left: 16%;
+    width: 24%;
+    height: 60%;
+}
+.setting-center-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+    border-radius: 14px;
+    position: absolute;
+    top:35%;
+    left: 43%;
+    width: 24%;
+    height: 60%;
+}
+.setting-right-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+    border-radius: 14px;
+    position: absolute;
+    top:35%;
+    left: 70%;
+    width: 24%;
+    height: 60%;
+}
+.swap-div-text{
+    color: white;
+    font-size: 16px;
+}
+.swap-image-div{
+    margin-top: 5%;
+}
+.setting-left-first-input-div{
+    position: absolute;
+    top:10%;
+    left:10%
+}
+.setting-left-first-input{
+    border: 1px solid #0f4658;
+    background-color: transparent;
+    border-radius: 16px;
+    width: 260px;
+    height: 30px;
+}
+.setting-left-title{
+    position: absolute;
+    top:20%;
+    left:10%;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+}
+.setting-left-wallet-button-div{
+    text-align: center;
+    margin-top: 48%;
+}
+.setting-left-subtitle{
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+    font-size: 18px;
+}
+.setting-left-second-input-div{
+    position: absolute;
+    left: 10%;
+    top:64%
+}
+.setting-left-button-div{
+    text-align: center;
+    margin-top: 24%;
+}
+.setting-left-button{
+    width: 120px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 14px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    background-color: #17A40B;
+}
+.setting-left-final-div{
+    text-align: center;
+    color: #17A40B;
+    margin-top: 5%;
+    font-size: 18px;
+}
+.setting-first-text{
+    position: absolute;
+    left:10%;
+    top:5%;
+    color: white;
+    font-size: 22px;
+}
+.line-div1{
+    position: absolute;
+    width: 80%;
+    left:10%;
+    top: 22%;
+    height: 1px;
+    background-color: #A5A5A5;
+}
+.setting-second-text{
+    position: absolute;
+    left:10%;
+    top:28%;
+    color: white;
+    font-size: 22px;
+}
+.line-div2{
+    position: absolute;
+    width: 80%;
+    left:10%;
+    top: 42%;
+    height: 1px;
+    background-color: #A5A5A5;
+}
+.setting-third-text{
+    position: absolute;
+    left:10%;
+    top:48%;
+    color: white;
+    font-size: 22px;
+}
+.line-div3{
+    position: absolute;
+    width: 80%;
+    left:10%;
+    top: 60%;
+    height: 1px;
+    background-color: #A5A5A5;
+}
+.setting-fourth-text{
+    position: absolute;
+    left:10%;
+    top:68%;
+    color: white;
+    font-size: 22px;
+}
+.line-div4{
+    position: absolute;
+    width: 80%;
+    left:10%;
+    top: 82%;
+    height: 1px;
+    background-color: #A5A5A5;
+}
+@media screen and (max-width: 420px){
+    .setting-main-div{
+        height: 896px;
+    }
+    .swap-div{
+        left:10%;
+        top:10%;
+        width: 24%;
+        height: 13%;
+    }
+    .question-div{
+        left:39%;
+        top:10%;
+        width: 24%;
+        height: 13%;
+    }
+    .headset-div{
+        left:68%;
+        top:10%;
+        width: 24%;
+        height: 13%;
+    } 
+    .setting-center-div{
+        display: none;
+    }
+    .setting-right-div{
+        display: none;
+    }
+    .setting-left-div{
+        top:27%;
+        left: 10%;
+        width: 80%;
+        height: 50%;
+    }
+    .setting-left-wallet-button-div{
+        position: absolute;
+        top:2%;
+        left:25%
+    }
+    .setting-left-subtitle{
+        position: absolute;
+        top:48%;
+        left:47%
+    }
+    .setting-left-button-div{
+        position: absolute;
+        top:58%;
+        left:30%
+    }
+    .setting-left-final-div{
+        position: absolute;
+        top:85%;
+        left:37%
+    }
+    .swap-image{
+        height: 50px;
+        width: 50px;
+    }
+    .swap-image-div{
+        margin-top: 20%;
+    }
+    .swap-div-text{
+        font-size: 12px;
+    }
+}
