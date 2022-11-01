@@ -108,7 +108,7 @@ const FarmOverView1Screen = () => {
                 <div className="earning-center-title">MY FARM</div>
                 <div className="farm-center-top-div">
                     <div className="earning-center-top-div-title">Number of NFT’s</div>
-                    <div className="farm-earning-center-top-div-value">2</div>
+                    <div className="farm-earning-center-top-div-value1">2</div>
                 </div>
                 <div className="farm-center-bottom-div">
                     <div className="earning-center-top-div-title">Total hash rate</div>

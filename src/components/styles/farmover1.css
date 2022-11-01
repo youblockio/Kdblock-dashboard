@@ -106,7 +106,15 @@
 .farm-earning-center-top-div-value{
     position: absolute;
     top: 30%;
-    left: 30%;
+    left: 25%;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+.farm-earning-center-top-div-value1{
+    position: absolute;
+    top: 30%;
+    left: 45%;
     color: white;
     font-size: 28px;
     font-weight: 500;
@@ -220,5 +228,15 @@
     }
     .refresh-div{
         display: none;
+    }
+    .farm-earning-center-top-div-value{
+        font-size: 22px;
+        left: 21%;
+        top: 40%;
+    }
+    .farm-earning-center-top-div-value1{
+        top: 40%;
+        left: 45%;
+        font-size: 22px;
     }
 }
