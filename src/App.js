@@ -5,10 +5,11 @@ import DashboardConfigScreen from "./components/screens/DashboardConfigScreen";
 import EarningsScreen from "./components/screens/EarningsScreen";
 import FarmOverView1Screen from "./components/screens/FarmOverView1Screen";
 import FarmOverViewScreen from "./components/screens/FarmOverViewScreen";
+import { WalletContextProvider } from "./components/context/walletContext";
 
 function App() {
   return (
-    <div>
+    <WalletContextProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<DashboardLoginScreen />} />
@@ -18,7 +19,7 @@ function App() {
           <Route path="/setting" element={<FarmOverViewScreen />} />
         </Routes>
       </BrowserRouter>
-    </div>
+    </WalletContextProvider>
   );
 }
 

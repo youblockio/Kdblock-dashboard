@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import kdblock from "../assets/KDblock.png";
 import gauge from "../assets/Gauge.png";
 import coins from "../assets/Coins.png";
@@ -9,8 +9,25 @@ import userImage from "../assets/user.png";
 import "../styles/farmover1.css";
 import { useNavigate } from "react-router-dom";
 
+
 const FarmOverView1Screen = () => {
     const navigate = useNavigate();
+
+    const user = JSON.parse(localStorage.getItem('user'))
+
+    const disconnect = async ()=>{
+
+        const { kadena } = window;
+        const dis =  await kadena.request({
+            method: 'kda_disconnect',
+            networkId: 'mainnet01 ',
+     
+          });
+
+          localStorage.removeItem("user");
+          navigate('/')
+    }
+
     return (
         <div className="farm-main-div">
             <div className="menu-div">
@@ -43,8 +60,8 @@ const FarmOverView1Screen = () => {
                 </div>
             </div>
             <div className="user-div">
-                <div className="user-wallet-address">1F1tAaz5x1HUXr0i...</div>
-                <div className="user-disconnect-text">Disconnect</div>
+                <div className="user-wallet-address">{user && (user.account.account).slice(0,30)}</div>
+                <div className="user-disconnect-text" onClick={disconnect}>Disconnect</div>
                 <div className="user-disconnect-button-div">
                     <img
                     src={disconnect}

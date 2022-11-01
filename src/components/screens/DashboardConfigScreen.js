@@ -1,13 +1,29 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import "../styles/DashboardConfig.css";
 import box from "../assets/image1.png";
 import solar from "../assets/image3.png";
 import { useNavigate } from "react-router-dom";
 import metamsk from "../assets/image2.png";
 import xwallet from "../assets/xWallet.png";
+import { WalletContext } from '../context/walletContext';
+import { Link } from 'react-router-dom';
 
 const DashboardConfigScreen = () => {
     const navigate = useNavigate();
+    const {setUserInfo}=useContext(WalletContext)
+
+    const connectXWallet =async ()=>{
+        const { kadena } = window;
+        const user =  await kadena.request({
+            method: 'kda_connect',
+            networkId: 'testnet04',
+          });
+          
+          setUserInfo(user)
+          localStorage.setItem('user',JSON.stringify(user))
+
+          navigate('/farm')
+    }
   return (
     <div className="config-main">
         <div className="config-minting-div">
@@ -54,13 +70,15 @@ const DashboardConfigScreen = () => {
                 </button>
             </div>
             <div className="config-Xwallet-connect-div">
-                <button className="connect-button" onClick={(e) => {e.preventDefault(); navigate("/farm");}}>
+                
+                <button className="connect-button" onClick={connectXWallet}>
                     <img
                     src={xwallet}
                     alt=''
                     className="xwallet" />
                     <div className="wallet-text">Connect X-wallet</div>
                 </button>
+                
             </div>
             <div className="config-set-wallet-connect-div">
                 <button className="connect-button">set wallet address</button>
