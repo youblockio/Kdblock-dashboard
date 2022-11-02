@@ -219,3 +219,12 @@
 
     }
 }
+@media screen and (max-width: 395px){
+    .input1{
+        border: 1px solid #0f4658;
+        background-color: transparent;
+        border-radius: 16px;
+        width: 270px;
+        height: 40px;
+    }
+}
