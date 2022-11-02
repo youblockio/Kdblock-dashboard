@@ -222,3 +222,42 @@
         left:28%
     }
 }
+
+@media screen and (max-width: 395px){
+    .main{
+        height: 844px;
+    }
+    .minting-title {
+        position: absolute;
+        text-align: center;
+        font-weight: 300;
+        font-size: 28px;
+    }
+    .minting-subtitle{
+        position: absolute;
+        text-align: center;
+    }
+    .miting-subtitle-main{
+        position: absolute;
+        text-align: center;
+        font-size: 22px;
+    }
+    .minting-value{
+        position: absolute;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .minting-button-div{
+        position: absolute;
+        text-align: center;
+    }
+    .main-connect-button-div{
+        position: absolute;
+        align-items: center;
+    }
+    .main-wallet-address-div{
+        text-align: center;
+        position: absolute;
+    }
+}
