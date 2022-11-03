@@ -58,6 +58,217 @@
     border-radius: 20px;
     flex-direction: row;
 }
+.minting-title1{
+    position: absolute;
+    left:38%;
+    top:10%;
+    font-weight: 400;
+    color: white;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+}
+.minting-subtitle1{
+    position: absolute;
+    left:44%;
+    top:27%;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+.miting-subtitle-main1{
+    position: absolute;
+    left:43%;
+    top:40%;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+.minting-value1{
+    position: absolute;
+    left:42.5%;
+    top:54%;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: underline
+}
+.minting-button-div1{
+    position: absolute;
+    left:42%;
+    top:74%;
+}
+.lucky-draw-div{
+    position: absolute;
+    left: 70%;
+    top: 4%;
+    width: 20%;
+    height: 75%;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+    border-radius: 20px;
+    border: solid 1px #A7A7A7;
+}
+.lucky-draw-title{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-top: 3%;
+    text-align: center;
+}
+.lucky-draw-top-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+    border-radius: 14px;
+    border: solid 1px #A7A7A7;
+    width: 86%;
+    margin-top: 5%;
+    margin-left: 7%;
+    height: 25%;
+}
+.lucky-draw-top-div-title{
+    color: white;
+    font-size: 12px;
+    text-align :left;
+    margin-left: 5%;
+    margin-right: 50%;
+    margin-top: 5%;
+}
+.lucky-draw-top-div-value{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    top: 28%;
+    left: 58%;
+}
+.lucky-draw-top-image-div{
+    position: absolute;
+    top: 18%;
+    left: 83%;
+
+}
+.lucky-draw-bottom-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+    border-radius: 14px;
+    border: solid 1px #A7A7A7;
+    width: 86%;
+    margin-top: 4%;
+    margin-left: 7%;
+    height: 45%;
+}
+.lucky-draw-bottom-div-title{
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+.lucky-draw-bottom-1st{
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+    border-radius: 14px;
+    border: solid 1px #A7A7A7;
+    width: 55%;
+    height: 16%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.lucky-draw-bottom-2nd{
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+    border-radius: 14px;
+    border: solid 1px #A7A7A7;
+    width: 55%;
+    height: 16%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.lucky-draw-bottom-3rd{
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+    border-radius: 14px;
+    border: solid 1px #A7A7A7;
+    width: 55%;
+    height: 16%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.lucky-3344{
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 2%;
+}
+.gold{
+    position: absolute;
+    left: 53%;
+    top: 65%;
+}
+.silver{
+    position: absolute;
+    left: 53%;
+    top: 75%;
+}
+.bronze{
+    position: absolute;
+    left: 53%;
+    top: 85%;
+}
+.lucky-draw-bottom-subtitle{
+    position: absolute;
+    font-size: 7px;
+    top:89%;
+    left:15%;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.lucky-draw-bottom-div-right{
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+    border-radius: 14px;
+    border: solid 1px #A7A7A7;
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    left: 65%;
+    text-align: center;
+}
+.calender{
+    margin-top: 10%;
+}
+.lucky-draw-bottom-div-right-title{
+    color: white;
+    font-size: 10px;
+    font-weight: 100;
+}
+.lucky-draw-button-div{
+    position: absolute;
+    left: 75%;
+    top: 85%;
+}
+.lucky-draw-button{
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    background-color: #17A40B;
+}
 .farm-left-div{
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
@@ -238,5 +449,38 @@
         top: 40%;
         left: 45%;
         font-size: 22px;
+    }
+    .lucky-draw-div{
+        display: none;
+    }
+    .lucky-draw-button-div{
+        display: none;
+    }
+    .minting-title1{
+        position: absolute;
+        left:15%;
+        top:10%;
+        text-align: center;
+
+    }
+    .minting-subtitle1{
+        position: absolute;
+        left:39%;
+        top:27%;
+    }
+    .miting-subtitle-main1{
+        position: absolute;
+        left:36%;
+        top:40%;
+    }
+    .minting-value1{
+        position: absolute;
+        left:35%;
+        top:54%;
+    }
+    .minting-button-div1{
+        position: absolute;
+        left:33%;
+        top:74%;
     }
 }
