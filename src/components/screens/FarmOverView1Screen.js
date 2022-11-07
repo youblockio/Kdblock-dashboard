@@ -20,7 +20,7 @@ const FarmOverView1Screen = () => {
     const current = new Date();
     const date = `${current.getDate()}`;
 
-    const months    = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+    const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
     const thisMonth = months[current.getMonth()];
 
     const navigate = useNavigate();

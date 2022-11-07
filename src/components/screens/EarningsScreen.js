@@ -19,6 +19,13 @@ import { useNavigate } from "react-router-dom";
 
 const EarningsScreen = () => {
   const navigate = useNavigate();
+
+  const current = new Date();
+  const date = `${current.getDate()}`;
+
+  const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  const thisMonth = months[current.getMonth()];
+
   return (
     <div className="Earning-main-div">
       <div className="menu-div">
@@ -100,7 +107,7 @@ const EarningsScreen = () => {
                             src={calender}
                             alt=''
                             className='calender' />
-                            <div className="lucky-draw-bottom-div-right-title">10th DEC</div>
+                            <div className="lucky-draw-bottom-div-right-title">{date}th {thisMonth}</div>
                         </div>
                         <div className="lucky-draw-bottom-1st">
                             <div className="lucky-3344">3344</div>
