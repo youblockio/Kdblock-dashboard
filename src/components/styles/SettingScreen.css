@@ -271,3 +271,18 @@
         font-size: 12px;
     }
 }
+
+@media screen and (min-width: 1550px){
+    .setting-main-div{
+        height: 1100px;
+    }
+    .setting-left-wallet-button-div{
+        text-align: center;
+        margin-top: 58%;
+    }
+    .setting-left-second-input-div{
+        position: absolute;
+        left: 10%;
+        top:54%
+    }
+}

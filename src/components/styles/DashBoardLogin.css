@@ -261,3 +261,9 @@
         position: absolute;
     }
 }
+
+@media screen and (min-width: 1550px){
+    .main{
+        height: 1120px;
+    }
+}
