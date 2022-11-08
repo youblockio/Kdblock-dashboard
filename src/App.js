@@ -5,11 +5,13 @@ import DashboardConfigScreen from "./components/screens/DashboardConfigScreen";
 import EarningsScreen from "./components/screens/EarningsScreen";
 import FarmOverView1Screen from "./components/screens/FarmOverView1Screen";
 import FarmOverViewScreen from "./components/screens/FarmOverViewScreen";
-import { WalletContextProvider } from "./components/context/walletContext";
+import { ThirdwebProvider, ChainId } from "@thirdweb-dev/react";
+
 
 function App() {
   return (
-    <WalletContextProvider>
+   
+      <ThirdwebProvider desiredChainId={ChainId.Mainnet}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<DashboardLoginScreen />} />
@@ -19,7 +21,8 @@ function App() {
           <Route path="/setting" element={<FarmOverViewScreen />} />
         </Routes>
       </BrowserRouter>
-    </WalletContextProvider>
+      </ThirdwebProvider>
+
   );
 }
 

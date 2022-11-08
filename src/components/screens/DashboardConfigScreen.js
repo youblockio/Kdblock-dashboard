@@ -1,16 +1,23 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import "../styles/DashboardConfig.css";
 import box from "../assets/image1.png";
 import solar from "../assets/image3.png";
 import { useNavigate } from "react-router-dom";
 import metamsk from "../assets/image2.png";
 import xwallet from "../assets/xWallet.png";
-import { WalletContext } from '../context/walletContext';
-import { Link } from 'react-router-dom';
+
+
+import { useMetamask,useAddress } from "@thirdweb-dev/react";
+
 
 const DashboardConfigScreen = () => {
+
+    const connectWithMetamask = useMetamask();
+    const address = useAddress();
+
+
     const navigate = useNavigate();
-    const {setUserInfo}=useContext(WalletContext)
+    
 
     const connectXWallet =async ()=>{
         const { kadena } = window;
@@ -19,11 +26,14 @@ const DashboardConfigScreen = () => {
             networkId: 'testnet04',
           });
           
-          setUserInfo(user)
+
           localStorage.setItem('user',JSON.stringify(user))
 
           navigate('/farm')
     }
+
+   
+
   return (
     <div className="config-main">
         <div className="config-minting-div">
@@ -65,8 +75,9 @@ const DashboardConfigScreen = () => {
                     <img
                     src={metamsk}
                     alt=''
-                    className="metamsk" />
-                    <div className="wallet-text">Connect wallet</div>
+                    className="metamsk"
+                     />
+                    <div className="wallet-text" onClick={connectWithMetamask}>Connect wallet</div>
                 </button>
             </div>
             <div className="config-Xwallet-connect-div">
