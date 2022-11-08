@@ -10,10 +10,22 @@ import nftImage from "../assets/nftImage.png";
 import kadena from "../assets/kadena.png";
 import disconnect from "../assets/SignOut.png";
 import userImage from "../assets/user.png";
+import ticket from "../assets/ticket.png";
+import gold from "../assets/gold.png";
+import silver from "../assets/silver.png";
+import bronze from "../assets/bronze.png";
+import calender from "../assets/calender.png";
 import { useNavigate } from "react-router-dom";
 
 const EarningsScreen = () => {
   const navigate = useNavigate();
+
+  const current = new Date();
+  const date = `${current.getDate()}`;
+
+  const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  const thisMonth = months[current.getMonth()];
+
   return (
     <div className="Earning-main-div">
       <div className="menu-div">
@@ -62,20 +74,68 @@ const EarningsScreen = () => {
                 </div>
             </div>
       <div className="earning-minting-div">
-        <div className="minting-image-div">
-          <img
-            className="minting-image-div-image"
-            alt=''
-            src={box}
-          />
-        </div>
-        <div className="minting-title">MINTING LIVE</div>
-        <div className="minting-subtitle">Phase 1</div>
-        <div className="miting-subtitle-main">Minted</div>
-        <div className="minting-value">120/500</div>
-        <div className="minting-button-div">
-          <button className="minting-button">Mint</button>
-        </div>
+      <div className="minting-image-div">
+                    <img
+                        className="minting-image-div-image"
+                        alt=''
+                        src={box}
+                    />
+                </div>
+                <div className="minting-title1">MINTING LIVE</div>
+                <div className="minting-subtitle1">Phase 1</div>
+                <div className="miting-subtitle-main1">Minted</div>
+                <div className="minting-value1">120/500</div>
+                <div className="minting-button-div1">
+                    <button className="minting-button">Mint</button>
+                </div>
+                <div className="lucky-draw-div">
+                    <div className="lucky-draw-title">Lucky Draw</div>
+                    <div className="lucky-draw-top-div">
+                        <div className="lucky-draw-top-div-title">Your Lucky Draw Number</div>
+                        <div className="lucky-draw-top-div-value">1166</div>
+                        <div className="lucky-draw-top-image-div">
+                            <img
+                                src={ticket}
+                                alt=''
+                                className='' />
+                        </div>
+                    </div>
+                    <div className="lucky-draw-bottom-div">
+                        <div className="lucky-draw-bottom-div-title">Winners</div>
+                        <div className="lucky-draw-bottom-div-right">
+                            <img
+                            src={calender}
+                            alt=''
+                            className='calender' />
+                            <div className="lucky-draw-bottom-div-right-title">{date}th {thisMonth}</div>
+                        </div>
+                        <div className="lucky-draw-bottom-1st">
+                            <div className="lucky-3344">3344</div>
+                            <img
+                                src={gold}
+                                alt=''
+                                className='gold' />
+                        </div>
+                        <div className="lucky-draw-bottom-2nd">
+                            <div className="lucky-3344">3344</div>
+                            <img
+                                src={silver}
+                                alt=''
+                                className='silver' />
+                        </div>
+                        <div className="lucky-draw-bottom-3rd">
+                            <div className="lucky-3344">3344</div>
+                            <img
+                                src={bronze}
+                                alt=''
+                                className='bronze' />
+                        </div>
+                        <p className="lucky-draw-bottom-subtitle">This month's winner numbers</p>
+                    </div>
+                </div>
+                <div className="lucky-draw-button-div">
+                    <button className="lucky-draw-button">Claim Tickets</button>
+                </div>
       </div>
       <div className="earning-left-div">
         <div className="earning-left-title">MY NFT'S</div>
