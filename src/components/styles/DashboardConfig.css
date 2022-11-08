@@ -228,3 +228,9 @@
         height: 40px;
     }
 }
+
+@media screen and (min-width: 1550px){
+    .config-main{
+        height: 1120px;
+    }
+}

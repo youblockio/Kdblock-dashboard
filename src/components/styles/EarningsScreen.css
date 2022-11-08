@@ -407,3 +407,9 @@
         font-weight: 500;
     }
 }
+
+@media screen and (min-width: 1550px){
+    .Earning-main-div{
+        height: 1100px; 
+    }
+}
