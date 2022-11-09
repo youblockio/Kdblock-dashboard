@@ -13,6 +13,65 @@
     overflow: hidden;
     font-family: Inter;
 }
+.gauge-icon-div2{
+    position: absolute;
+    width: 80%;
+    height: 16%;
+    left: 10%;
+    top: 30%;
+    
+    border-radius: 14px;
+    
+    text-align: center;
+    cursor: pointer;
+}
+.gauge-icon-div2:hover{
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+}
+.coin-icon-div2{
+    position: absolute;
+    width: 80%;
+    height: 16%;
+    border-radius: 14px;
+    text-align: center;
+    cursor: pointer;
+    left: 10%;
+    top: 50%;
+    
+}
+.coin-icon-div2:hover{
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+}
+.setting-icon-div2{
+    position: absolute;
+    width: 80%;
+    height: 16%;
+    left: 10%;
+    top: 70%;
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+    border-radius: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.setting-icon-div2:hover{
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+}
 .swap-div{
     background: radial-gradient(50% 50%at 50% 50%,
             rgba(255, 255, 255, 0.4),
@@ -284,5 +343,35 @@
         position: absolute;
         left: 10%;
         top:54%
+    }
+    .coin-icon-div2{
+        height: 12%;
+    }
+    .kdblock-icon-div2{
+        height: 12%;
+    }
+    .setting-icon-div2{
+        height: 12%;
+    }
+    .gauge-icon-div2{
+        height: 12%;
+    }
+    .swap-div{
+        height: 15%;
+    }
+    .question-div{
+        height: 15%;
+    }
+    .headset-div{
+        height: 15%;
+    }
+    .setting-left-div{
+        top: 33%;
+    }
+    .setting-center-div{
+        top: 33%;
+    }
+    .setting-right-div{
+        top: 33%;
     }
 }

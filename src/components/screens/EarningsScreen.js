@@ -15,9 +15,9 @@ import gold from "../assets/gold.png";
 import silver from "../assets/silver.png";
 import bronze from "../assets/bronze.png";
 import calender from "../assets/calender.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 
-const EarningsScreen = () => {
+const EarningsScreen = (props) => {
   const navigate = useNavigate();
 
   const current = new Date();
@@ -35,21 +35,21 @@ const EarningsScreen = () => {
             alt=''
             className="kdblock-icon" />
         </div>
-        <div className="gauge-icon-div" onClick={(e) => {e.preventDefault(); navigate("/config");}}>
+        <div className="gauge-icon-div" onClick={(e) => {e.preventDefault(); navigate("/farm");}}>
           <img
             src={gauge}
             alt=''
             className="gauge-icon" />
           <div className="gauge-icon-text">Farm Overview</div>
         </div>
-        <div className="coin-icon-div" onClick={(e) => {e.preventDefault(); navigate("/farm");}}>
+        <div className="coin-icon-div" onClick={(e) => {e.preventDefault(); navigate("/earning");}}>
           <img
             src={coins}
             alt=''
             className="coin-icon" />
           <div className="coin-icon-text">Earnings</div>
         </div>
-        <div className="setting-icon-div" onClick={(e) => {e.preventDefault(); navigate("/earning");}}>
+        <div className="setting-icon-div" onClick={(e) => {e.preventDefault(); navigate("/setting");}}>
           <img
             src={setting}
             alt=''
@@ -178,8 +178,12 @@ const EarningsScreen = () => {
         </div>
         <div className="earning-center-bottom-div">
           <div className="earning-center-top-div-title">24hr Earnings</div>
-          <div className="week-button-div">Week</div>
-          <div className="month-button-div">Month</div>
+          <div className="week-button-div">
+            <p>Weak</p>
+          </div>
+          <div className="month-button-div">
+            <p>Month</p>
+          </div>
           <div className="earning-center-top-div-value">8 KDA</div>
           <div className="earning-center-top-div-subvalue">$ 13 USD</div>
           <div className="refresh-div"></div>

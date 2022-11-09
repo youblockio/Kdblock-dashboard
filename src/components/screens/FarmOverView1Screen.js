@@ -49,21 +49,21 @@ const FarmOverView1Screen = () => {
                         alt=''
                         className="kdblock-icon" />
                 </div>
-                <div className="gauge-icon-div" onClick={(e) => { e.preventDefault(); navigate("/config"); }}>
+                <div className="gauge-icon-div1" onClick={(e) => { e.preventDefault(); navigate("/farm"); }}>
                     <img
                         src={gauge}
                         alt=''
                         className="gauge-icon" />
                     <div className="gauge-icon-text">Farm Overview</div>
                 </div>
-                <div className="coin-icon-div" onClick={(e) => { e.preventDefault(); navigate("/earning"); }}>
+                <div className="coin-icon-div1" onClick={(e) => { e.preventDefault(); navigate("/earning"); }}>
                     <img
                         src={coins}
                         alt=''
                         className="coin-icon" />
                     <div className="coin-icon-text">Earnings</div>
                 </div>
-                <div className="setting-icon-div" onClick={(e) => { e.preventDefault(); navigate("/setting"); }}>
+                <div className="setting-icon-div1" onClick={(e) => { e.preventDefault(); navigate("/setting"); }}>
                     <img
                         src={setting}
                         alt=''

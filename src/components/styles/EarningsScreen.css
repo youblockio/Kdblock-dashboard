@@ -39,9 +39,26 @@
 }
 .kdblock-icon-div{
     position: absolute;
-    left:20%;
-    top:15%;
+    width: 80%;
+    height: 16%;
+    left: 10%;
+    top: 12%;
+    
+    border-radius: 14px;
+    
+    text-align: center;
     cursor: pointer;
+}
+.kdblock-icon{
+    width: 70%;
+    margin-top: 20%;
+}
+.kdblock-icon-div:hover{
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
 }
 
 /* .kdblock-icon-div:hover{
@@ -50,37 +67,77 @@
 } */
 .gauge-icon-div{
     position: absolute;
-    left:30%;
-    top:30%;
+    width: 80%;
+    height: 16%;
+    left: 10%;
+    top: 30%;
+    
+    border-radius: 14px;
+    
+    text-align: center;
     cursor: pointer;
 }
-/* .gauge-icon-div:hover{
-    background-color: #727272;
-    border-radius: 20px;
-} */
+.gauge-icon-div:hover{
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+}
 .coin-icon-div{
     position: absolute;
-    left:30%;
-    top:50%;
+    width: 80%;
+    height: 16%;
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+    border-radius: 14px;
+    
+    text-align: center;
     cursor: pointer;
+    left: 10%;
+    top: 50%;
+    
+}
+.coin-icon-div:hover{
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
 }
 .setting-icon-div{
     position: absolute;
-    left:30%;
-    top:70%;
+    width: 80%;
+    height: 16%;
+    left: 10%;
+    top: 70%;
+    
+    border-radius: 14px;
+    
+    text-align: center;
     cursor: pointer;
+}
+.setting-icon-div:hover{
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+}
+.setting-icon{
+    margin-top: 7%;
 }
 .gauge-icon-text{
     text-align: center;
-    position: absolute;
-    left:-10%;
-    font-size: 14px;
+    font-size: 12px;
     color: white;
 }
 .coin-icon-text{
     text-align: center;
-    position: absolute;
-    font-size: 14px;
+    font-size: 12px;
     color: white;
 }
 .earning-left-div{
@@ -411,5 +468,33 @@
 @media screen and (min-width: 1550px){
     .Earning-main-div{
         height: 1100px; 
+    }
+    .earning-center-button-text{
+        position: absolute;
+        top:12%;
+        left:40%;
+        color: white;
+        font-size: 10px;
+        font-weight: 200;
+    }
+    .week-button-div{
+        font-size: 9px;
+        font-weight: 600;
+    }
+    .month-button-div{
+        font-size: 9px;
+        font-weight: 600;
+    }
+    .coin-icon-div{
+        height: 12%;
+    }
+    .kdblock-icon-div{
+        height: 12%;
+    }
+    .setting-icon-div{
+        height: 12%;
+    }
+    .gauge-icon-div{
+        height: 12%;
     }
 }
