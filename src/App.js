@@ -6,6 +6,7 @@ import EarningsScreen from "./components/screens/EarningsScreen";
 import FarmOverView1Screen from "./components/screens/FarmOverView1Screen";
 import FarmOverViewScreen from "./components/screens/FarmOverViewScreen";
 import { ThirdwebProvider, ChainId } from "@thirdweb-dev/react";
+import ScreenSize  from "./components/screens/ScreenSize";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/farm" element={<FarmOverView1Screen />} />
           <Route path="/earning" element={<EarningsScreen />} />
           <Route path="/setting" element={<FarmOverViewScreen />} />
+          <Route path="/size" element={<ScreenSize />} />
         </Routes>
       </BrowserRouter>
       </ThirdwebProvider>
