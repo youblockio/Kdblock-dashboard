@@ -1,0 +1,638 @@
+.Earning-main-div{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    display: flex;
+    height: 750px;
+    background-image: url(../assets/Dashboard\ Login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-direction: row;
+    gap: 70px;
+    overflow: hidden;
+    font-family: Inter;
+}
+.earning-minting-div{
+    position: absolute;
+    width: 70%;
+    height: 35%;
+    left: 20%;
+    top:10%;
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+    border-radius: 20px;
+    flex-direction: row;
+}
+.menu-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+    border-radius: 30px;
+    position: absolute;
+    left:5%;
+    top:20%;
+    width: 8%;
+    height: 70%;
+    flex-direction: row;
+}
+.kdblock-icon-div{
+    position: absolute;
+    width: 80%;
+    height: 16%;
+    left: 10%;
+    top: 12%;
+    
+    border-radius: 14px;
+    
+    text-align: center;
+    cursor: pointer;
+}
+.kdblock-icon{
+    width: 70%;
+    margin-top: 20%;
+}
+/* .kdblock-icon-div:hover{
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+} */
+
+/* .kdblock-icon-div:hover{
+    background-color: #727272;
+    border-radius: 20px;
+} */
+.gauge-icon-div{
+    position: absolute;
+    width: 80%;
+    height: 16%;
+    left: 10%;
+    top: 30%;
+    
+    border-radius: 14px;
+    
+    text-align: center;
+    cursor: pointer;
+}
+.gauge-icon-div:hover{
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+}
+.coin-icon-div{
+    position: absolute;
+    width: 80%;
+    height: 16%;
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+    border-radius: 14px;
+    
+    text-align: center;
+    cursor: pointer;
+    left: 10%;
+    top: 50%;
+    
+}
+.coin-icon-div:hover{
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+}
+.setting-icon-div{
+    position: absolute;
+    width: 80%;
+    height: 16%;
+    left: 10%;
+    top: 70%;
+    
+    border-radius: 14px;
+    
+    text-align: center;
+    cursor: pointer;
+}
+.setting-icon-div:hover{
+    box-shadow: 1px 2px 2px 2px lightgreen;
+    border: solid 1px #A7A7A7;
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+}
+.setting-icon{
+    margin-top: 7%;
+}
+.gauge-icon-text{
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+.coin-icon-text{
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+.earning-left-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+    border-radius: 14px;
+    position: absolute;
+    left:20%;
+    top:50%;
+    width: 20%;
+    height: 48%;
+}
+.earning-left-main-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+    border-radius: 14px;
+    border: solid 1px #A7A7A7;
+    width: 80%;
+    height: 50%;
+    top:10%;
+    left:10%;
+    position: absolute;
+}
+.addbutton-div{
+    position: absolute;
+    top: 65%;
+    left:40%;
+}
+.earning-left-title{
+    position: absolute;
+    top:2%;
+    left:10%;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+}
+.earning-left-subtitle{
+    position: absolute;
+    top:85%;
+    left:30%;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 0.01em;
+}
+.earning-left-main-div-title{
+    position: absolute;
+    top:10%;
+    left:3%;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+}
+.earning-left-main-div-value{
+    position: absolute;
+    top:7%;
+    left:47%;
+    color: white;
+    font-size: 18px;
+    font-weight: 400; 
+}
+.earning-left-main-div-subtitle{
+    position: absolute;
+    top:10%;
+    left:54%;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+}
+.earning-left-image-div{
+    position: absolute;
+    top:30%;
+    left:5%;
+}
+.earning-right-image-div{
+    position: absolute;
+    top:30%;
+    left:25%;
+}
+.earning-center-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+    border-radius: 14px;
+    position: absolute;
+    left:45%;
+    top:50%;
+    width: 20%;
+    height: 48%;
+}
+.earning-center-title{
+    position: absolute;
+    top:2%;
+    left:10%;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.01em; 
+}
+.earning-center-button-div{
+    position: absolute;
+    left:65%;
+    top:2%;
+}
+.earning-center-button{
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    background-color: #17A40B;
+}
+.earning-center-button-text{
+    position: absolute;
+    top:12%;
+    left:55%;
+    color: white;
+    font-size: 8px;
+    font-weight: 100;
+}
+.earning-center-top-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+    border-radius: 14px;
+    border: solid 1px #A7A7A7;
+    width: 80%;
+    height: 35%;
+    top:20%;
+    left:10%;
+    position: absolute; 
+}
+.earning-center-top-div-title{
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+.earning-center-top-div-value{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+.earning-center-top-div-subvalue{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+.refresh-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(255, 255, 255, 0.4),
+    rgba(165, 165, 165, 0.3));
+    width: 40%;
+    height: 10%;
+    bottom: 5%;
+    position: absolute;
+    right: 5%;
+    border-radius: 10px;
+}
+.earning-center-bottom-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(7, 0, 0, 0.1),
+    rgba(7, 0, 0, 0.1));
+    border-radius: 14px;
+    border: solid 1px #A7A7A7;
+    width: 80%;
+    height: 35%;
+    top:60%;
+    left:10%;
+    position: absolute;
+}
+.week-button-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(255, 255, 255, 0.4),
+    rgba(165, 165, 165, 0.3));
+    border-radius: 14px;
+    height: 15%;
+    width: 20%;
+    top:8%;
+    color: white;
+    font-size: 8px;
+    font-weight: 300;
+    position: absolute;
+    right: 30%;
+    text-align: center;
+    cursor: pointer;
+}
+.month-button-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(255, 255, 255, 0.4),
+    rgba(165, 165, 165, 0.3));
+    border-radius: 14px;
+    height: 15%;
+    width: 20%;
+    top:8%;
+    color: white;
+    font-size: 8px;
+    font-weight: 300;
+    position: absolute;
+    right: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+.earning-right-div{
+    background: radial-gradient(50% 50%at 50% 50%,
+    rgba(255, 255, 255, 0.4),
+    rgba(165, 165, 165, 0.3));
+    border-radius: 14px;
+    position: absolute;
+    left:70%;
+    top:50%;
+    width: 20%;
+    height: 48%; 
+}
+.earning-center-transaction-first{
+    top:20%;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+}
+.transaction-image-div{
+    top:30%;
+    left:5%;
+    position: absolute;
+}
+.transaction-title{
+    position: absolute;
+    top:20%;
+    left:20%;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+.transaction-subtitle{
+    position: absolute;
+    top:50%;
+    left:20%;
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+}
+.transaction-value{
+    position: absolute;
+    top:15%;
+    left:55%;
+    color: #ACDF46;
+    font-size: 20px;
+    letter-spacing: 0.01;
+    font-weight: 600;
+}
+.transaction-subvalue{
+    position: absolute;
+    top:55%;
+    left:80%;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.01;
+    font-weight: 400;
+}
+.earning-center-transaction-second{
+    top:40%;
+    position: absolute;
+    width: 100%;
+    height: 20%; 
+}
+.earning-center-transaction-third{
+    top:60%;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: radial-gradient(50% 50%at 50% 50%,
+            rgba(255, 255, 255, 0.4),
+            rgba(165, 165, 165, 0.3));
+}
+@media screen and (max-width: 1485px){
+    .Earning-main-div{
+        height: 890px; 
+    }
+    .earning-left-main-div-title{
+        position: absolute;
+        top:10%;
+        left:3%;
+        color: white;
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .earning-left-main-div-subtitle{
+        position: absolute;
+        top:10%;
+        left:54%;
+        color: white;
+        font-size: 11px;
+        font-weight: 300;
+    }
+}
+@media screen and (max-width: 420px){
+    .Earning-main-div{
+        height: 1200px; 
+    }
+    .menu-div{
+        display: none;
+    } 
+    .earning-minting-div{
+        display: none;
+    }
+    .earning-left-div{
+        position: absolute;
+        top:5%;
+        left:10%;
+        width: 80%;
+        height: 30%;
+    }
+    .earning-center-div{
+        position: absolute;
+        top: 40%;
+        left:10%;
+        width: 80%;
+        height: 25%;
+    }
+    .earning-right-div{
+        position: absolute;
+        top:67%;
+        left:10%;
+        width: 80%;
+        height: 22%;
+    }
+    .earning-center-top-div-title{
+        font-size: 12px;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 1550px){
+    .Earning-main-div{
+        height: 1100px; 
+    }
+    .earning-center-button-text{
+        position: absolute;
+        top:12%;
+        left:40%;
+        color: white;
+        font-size: 10px;
+        font-weight: 200;
+    }
+    .week-button-div{
+        font-size: 9px;
+        font-weight: 600;
+    }
+    .month-button-div{
+        font-size: 9px;
+        font-weight: 600;
+    }
+    .coin-icon-div{
+        height: 12%;
+    }
+    .kdblock-icon-div{
+        height: 12%;
+    }
+    .setting-icon-div{
+        height: 12%;
+    }
+    .gauge-icon-div{
+        height: 12%;
+    }
+}
+@media screen and (min-width: 2555px){
+    .earning-left-div{
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        border-radius: 14px;
+        position: absolute;
+        left:20%;
+        top:50%;
+        width: 21%;
+        height: 48%;
+    }
+    .earning-center-div{
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        border-radius: 14px;
+        position: absolute;
+        left:44%;
+        top:50%;
+        width: 21%;
+        height: 48%;
+    }
+    .earning-right-div{
+        background: radial-gradient(50% 50%at 50% 50%,
+        rgba(255, 255, 255, 0.4),
+        rgba(165, 165, 165, 0.3));
+        border-radius: 14px;
+        position: absolute;
+        left:68%;
+        top:50%;
+        width: 22%;
+        height: 48%; 
+    }
+    .earning-left-main-div-title{
+        position: absolute;
+        top:10%;
+        left:5%;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .earning-left-main-div-subtitle{
+        position: absolute;
+        top:10%;
+        left:58%;
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .earning-left-image-div{
+        position: absolute;
+        top:35%;
+        left:20%;
+    }
+    .earning-right-image-div{
+        position: absolute;
+        top:35%;
+        left:40%;
+    }
+    .earning-left-subtitle{
+        position: absolute;
+        top:85%;
+        left:33%;
+        color: white;
+        font-size: 28px;
+        letter-spacing: 0.01em;
+    }
+    .earning-center-button-div{
+        position: absolute;
+        left:75%;
+        top:2%;
+    }
+    .earning-center-button{
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 8px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        background-color: #17A40B;
+    }
+    .earning-center-button-text{
+        position: absolute;
+        top:12%;
+        left:57%;
+        color: white;
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .transaction-value{
+        position: absolute;
+        top:15%;
+        left:65%;
+        color: #ACDF46;
+        font-size: 20px;
+        letter-spacing: 0.01;
+        font-weight: 600;
+    }
+    .transaction-subvalue{
+        font-size: 16px;
+    }
+    .transaction-title{
+        font-size: 16px;
+    }
+    .transaction-subtitle{
+        position: absolute;
+        top:50%;
+        left:20%;
+        font-size: 14px;
+        font-weight: 300;
+        color: white;
+    }
+}
