@@ -53,13 +53,13 @@
     width: 70%;
     margin-top: 20%;
 }
-.kdblock-icon-div:hover{
+/* .kdblock-icon-div:hover{
     box-shadow: 1px 2px 2px 2px lightgreen;
     border: solid 1px #A7A7A7;
     background: radial-gradient(50% 50%at 50% 50%,
     rgba(7, 0, 0, 0.1),
     rgba(7, 0, 0, 0.1));
-}
+} */
 
 /* .kdblock-icon-div:hover{
     background-color: #727272;
@@ -427,6 +427,27 @@
             rgba(255, 255, 255, 0.4),
             rgba(165, 165, 165, 0.3));
 }
+@media screen and (max-width: 1485px){
+    .Earning-main-div{
+        height: 890px; 
+    }
+    .earning-left-main-div-title{
+        position: absolute;
+        top:10%;
+        left:3%;
+        color: white;
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .earning-left-main-div-subtitle{
+        position: absolute;
+        top:10%;
+        left:54%;
+        color: white;
+        font-size: 11px;
+        font-weight: 300;
+    }
+}
 @media screen and (max-width: 420px){
     .Earning-main-div{
         height: 1200px; 
@@ -496,5 +517,122 @@
     }
     .gauge-icon-div{
         height: 12%;
+    }
+}
+@media screen and (min-width: 2555px){
+    .earning-left-div{
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        border-radius: 14px;
+        position: absolute;
+        left:20%;
+        top:50%;
+        width: 21%;
+        height: 48%;
+    }
+    .earning-center-div{
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        border-radius: 14px;
+        position: absolute;
+        left:44%;
+        top:50%;
+        width: 21%;
+        height: 48%;
+    }
+    .earning-right-div{
+        background: radial-gradient(50% 50%at 50% 50%,
+        rgba(255, 255, 255, 0.4),
+        rgba(165, 165, 165, 0.3));
+        border-radius: 14px;
+        position: absolute;
+        left:68%;
+        top:50%;
+        width: 22%;
+        height: 48%; 
+    }
+    .earning-left-main-div-title{
+        position: absolute;
+        top:10%;
+        left:5%;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .earning-left-main-div-subtitle{
+        position: absolute;
+        top:10%;
+        left:58%;
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .earning-left-image-div{
+        position: absolute;
+        top:35%;
+        left:20%;
+    }
+    .earning-right-image-div{
+        position: absolute;
+        top:35%;
+        left:40%;
+    }
+    .earning-left-subtitle{
+        position: absolute;
+        top:85%;
+        left:33%;
+        color: white;
+        font-size: 28px;
+        letter-spacing: 0.01em;
+    }
+    .earning-center-button-div{
+        position: absolute;
+        left:75%;
+        top:2%;
+    }
+    .earning-center-button{
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 8px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        background-color: #17A40B;
+    }
+    .earning-center-button-text{
+        position: absolute;
+        top:12%;
+        left:57%;
+        color: white;
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .transaction-value{
+        position: absolute;
+        top:15%;
+        left:65%;
+        color: #ACDF46;
+        font-size: 20px;
+        letter-spacing: 0.01;
+        font-weight: 600;
+    }
+    .transaction-subvalue{
+        font-size: 16px;
+    }
+    .transaction-title{
+        font-size: 16px;
+    }
+    .transaction-subtitle{
+        position: absolute;
+        top:50%;
+        left:20%;
+        font-size: 14px;
+        font-weight: 300;
+        color: white;
     }
 }

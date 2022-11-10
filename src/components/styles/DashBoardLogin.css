@@ -166,6 +166,11 @@
     letter-spacing: 0.1em;
     background-color: #17A40B;
 }
+@media screen and (max-width: 1485px){
+    .main{
+        height: 890px;
+    }
+}
 @media screen and (max-width: 420px){
     .main{
         height: 896px;
@@ -265,5 +270,55 @@
 @media screen and (min-width: 1550px){
     .main{
         height: 1120px;
+    }
+}
+
+@media screen and (min-width: 2550px){
+    .minting-subtitle{
+        position: absolute;
+        left:57%;
+        top:27%;
+        color: white;
+        font-size: 24px;
+        letter-spacing: 0.1em;
+    }
+    .miting-subtitle-main{
+        position: absolute;
+        left:56.5%;
+        top:40%;
+        color: white;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+    }
+    .minting-value{
+        position: absolute;
+        left:56%;
+        top:54%;
+        color: white;
+        font-size: 32px;
+        font-weight: 600;
+        text-decoration: underline
+    }
+    .minting-button-div{
+        position: absolute;
+        left:56.4%;
+        top:74%;
+    }
+    .minting-bottom-div-subtitle{
+        position: absolute;
+        color: white;
+        left: 5%;
+        font-size: 22px;
+        letter-spacing: 1px;
+        top: 20%;
+    }
+    .main-wallet-address-div{
+        position: absolute;
+        top:59%;
+        left:34%;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
     }
 }

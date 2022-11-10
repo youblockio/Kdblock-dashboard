@@ -375,3 +375,30 @@
         top: 33%;
     }
 }
+
+@media screen and (min-width: 2550px){
+    .setting-left-first-input{
+        border: 1px solid #0f4658;
+        background-color: transparent;
+        border-radius: 16px;
+        width: 460px;
+        height: 40px;
+    }
+    .setting-left-title{
+        position: absolute;
+        top:23%;
+        left:10%;
+        color: white;
+        font-size: 32px;
+        letter-spacing: 0.01em;
+    }
+    .setting-left-wallet-button-div{
+        text-align: center;
+        margin-top: 46%;
+    }
+    .setting-left-second-input-div{
+        position: absolute;
+        left: 10%;
+        top:64%
+    }
+}

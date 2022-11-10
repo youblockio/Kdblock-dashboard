@@ -147,6 +147,11 @@
     width: 90%;
     height: 70%;
 }
+@media screen and (max-width: 1485px){
+    .config-main{
+        height: 890px;
+    } 
+}
 @media screen and (max-width: 420px){
     .config-main{
         height: 896px;
