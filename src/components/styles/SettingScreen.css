@@ -265,6 +265,42 @@
     height: 1px;
     background-color: #A5A5A5;
 }
+@media screen and (max-width: 1485px){
+    .setting-main-div{
+        height: 890px;
+    }
+    .swap-div{
+        height: 17%;
+    }
+    .question-div{
+        height: 17%;
+    }
+    .headset-div{
+        height: 17%;
+    }
+    .setting-left-div{
+        top:30%;
+        left: 16%;
+        width: 25%;
+        height: 60%;
+    }
+    .setting-center-div{
+        top:30%;
+        left: 43%;
+        width: 25%;
+        height: 60%;
+    }
+    .setting-right-div{
+        top:30%;
+        left: 70%;
+        width: 25%;
+        height: 60%;
+    }
+    .setting-left-wallet-button-div{
+        text-align: center;
+        margin-top: 60%;
+    }
+}
 @media screen and (max-width: 420px){
     .setting-main-div{
         height: 896px;
@@ -400,5 +436,38 @@
         position: absolute;
         left: 10%;
         top:64%
+    }
+    .swap-div{
+        top:10%;
+        width: 9%;
+        height: 16%;
+    }
+    .question-div{
+        width: 9%;
+        height: 16%;
+        text-align: center;
+    }
+    .headset-div{
+        width: 9%;
+        height: 16%;
+        text-align: center;
+    }
+    .setting-left-div{
+        top:30%;
+        left: 16%;
+        width: 24%;
+        height: 60%;
+    }
+    .setting-center-div{
+        top:30%;
+        left: 43%;
+        width: 24%;
+        height: 60%;
+    }
+    .setting-right-div{
+        top:30%;
+        left: 70%;
+        width: 24%;
+        height: 60%;
     }
 }
