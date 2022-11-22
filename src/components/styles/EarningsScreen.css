@@ -447,6 +447,63 @@
         font-size: 11px;
         font-weight: 300;
     }
+    .earning-left-div{
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        border-radius: 14px;
+        position: absolute;
+        left:20%;
+        top:45%;
+        width: 22%;
+        height: 46%;
+    }
+    .earning-center-div{
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        border-radius: 14px;
+        position: absolute;
+        left:44%;
+        top:45%;
+        width: 22%;
+        height: 46%;
+    }
+    .earning-right-div{
+        background: radial-gradient(50% 50%at 50% 50%,
+        rgba(255, 255, 255, 0.4),
+        rgba(165, 165, 165, 0.3));
+        border-radius: 14px;
+        position: absolute;
+        left:68%;
+        top:45%;
+        width: 22%;
+        height: 46%; 
+    }
+    .menu-div{
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        border-radius: 30px;
+        position: absolute;
+        left:5%;
+        top:16%;
+        width: 8%;
+        height: 70%;
+        flex-direction: row;
+    }
+    .earning-minting-div{
+        position: absolute;
+        width: 70%;
+        height: 34%;
+        left: 20%;
+        top:9%;
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        border-radius: 20px;
+        flex-direction: row;
+    }
 }
 @media screen and (max-width: 420px){
     .Earning-main-div{
@@ -526,10 +583,10 @@
                 rgba(165, 165, 165, 0.3));
         border-radius: 14px;
         position: absolute;
-        left:20%;
-        top:50%;
-        width: 21%;
-        height: 48%;
+        left:15%;
+        top:45%;
+        width: 20%;
+        height: 45%;
     }
     .earning-center-div{
         background: radial-gradient(50% 50%at 50% 50%,
@@ -537,10 +594,10 @@
                 rgba(165, 165, 165, 0.3));
         border-radius: 14px;
         position: absolute;
-        left:44%;
-        top:50%;
-        width: 21%;
-        height: 48%;
+        left:37.5%;
+        top:45%;
+        width: 20%;
+        height: 45%;
     }
     .earning-right-div{
         background: radial-gradient(50% 50%at 50% 50%,
@@ -548,10 +605,10 @@
         rgba(165, 165, 165, 0.3));
         border-radius: 14px;
         position: absolute;
-        left:68%;
-        top:50%;
-        width: 22%;
-        height: 48%; 
+        left:60%;
+        top:45%;
+        width: 20%;
+        height: 45%; 
     }
     .earning-left-main-div-title{
         position: absolute;
@@ -634,5 +691,29 @@
         font-size: 14px;
         font-weight: 300;
         color: white;
+    }
+    .menu-div{
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        border-radius: 30px;
+        position: absolute;
+        left:5%;
+        top:16%;
+        width: 6%;
+        height: 70%;
+        flex-direction: row;
+    }
+    .earning-minting-div{
+        position: absolute;
+        width: 65%;
+        height: 33%;
+        left: 15%;
+        top:10%;
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        border-radius: 20px;
+        flex-direction: row;
     }
 }
