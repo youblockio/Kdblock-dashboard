@@ -14,6 +14,32 @@ import xwallet from "../assets/xWallet.png";
 
 const FarmOverViewScreen = () => {
     const navigate = useNavigate();
+    const connectXWallet =async ()=>{
+        const { kadena } = window;
+        const user =  await kadena.request({
+            method: 'kda_connect',
+            networkId: 'testnet04',
+          });
+          
+
+          localStorage.setItem('user',JSON.stringify(user))
+
+        //   navigate('/farm')
+    }
+
+    const disconnectWallet = async () => {
+
+        const { kadena } = window;
+        const dis = await kadena.request({
+            method: 'kda_disconnect',
+            networkId: 'mainnet01 ',
+
+        });
+
+        localStorage.removeItem("user");
+        // navigate('/')
+    }
+  
   return (
     <div className="setting-main-div">
         <div className="menu-div">
@@ -47,7 +73,7 @@ const FarmOverViewScreen = () => {
             </div>
             <div className="user-div">
                 <div className="user-wallet-address">1F1tAaz5x1HUXr0i...</div>
-                <div className="user-disconnect-text">Disconnect</div>
+                <div className="user-disconnect-text" onClick={disconnectWallet}>Disconnect</div>
                 <div className="user-disconnect-button-div">
                     <img
                     src={disconnect}
@@ -97,7 +123,7 @@ const FarmOverViewScreen = () => {
                 </div>
                 <div className="setting-left-title">Connect your Kadena wallet address for payouts </div>
                 <div className="setting-left-wallet-button-div">
-                    <button className="connect-button">
+                    <button className="connect-button" onClick={connectXWallet}>
                     {/* <img
                     src={xwallet}
                     alt=''

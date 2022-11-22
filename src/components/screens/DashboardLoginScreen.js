@@ -3,8 +3,13 @@ import "../styles/DashBoardLogin.css";
 import box from "../assets/image1.png";
 import { useNavigate } from "react-router-dom";
 import metamsk from "../assets/image2.png";
+import { useMetamask,useAddress } from "@thirdweb-dev/react";
 
 const DashboardLoginScreen = () => {
+    const connectWithMetamask = useMetamask();
+    const address = useAddress();
+
+
     const navigate = useNavigate();
   return (
     <div className="main">
@@ -28,7 +33,7 @@ const DashboardLoginScreen = () => {
         <div className="minting-bottom-div-title">WELCOME</div>
         <div className="minting-bottom-div-subtitle">Connect your wallet with KDBLOCK NFT</div>
         <div className="main-connect-button-div">
-            <button className="connect-button">
+            <button className="connect-button" onClick={connectWithMetamask}>
             <img
             src={metamsk}
             alt=''
