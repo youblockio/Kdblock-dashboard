@@ -432,6 +432,71 @@
     .farm-main-div{
         height: 890px;
     }
+    .farm-minting-div{
+        position: absolute;
+        width: 64%;
+        height: 33%;
+        left: 18%;
+    }
+    .farm-left-div{
+        left:18%;
+        top:45%;
+        width: 20%;
+        height: 42%;
+    }
+    .farm-center-div{
+        left:40%;
+        top:45%;
+        width: 20%;
+        height: 42%;
+    }
+    .farm-right-div{
+        left:62%;
+        top:45%;
+        width: 20%;
+        height: 42%;
+    }
+    .lucky-draw-top-div-title{
+        color: white;
+        font-size: 10px;
+        text-align :left;
+        margin-left: 5%;
+        margin-right: 50%;
+        margin-top: 10%;
+    }
+    .lucky-draw-top-div-value{
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        position: absolute;
+        top: 26%;
+        left: 58%;
+    }
+    .lucky-draw-bottom-div-right-title{
+        color: white;
+        font-size: 8px;
+        font-weight: 100;
+        margin-top: 8%;
+    }
+    .lucky-draw-bottom-div-title{
+        color: white;
+        font-size: 11px;
+        text-align: left;
+        margin-top: 4%;
+        margin-left: 7%;
+    }
+    /* .lucky-draw-button{
+        width: 0px;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        background-color: #17A40B;
+    } */
     .gold{
         position: absolute;
         left: 53%;
@@ -457,7 +522,7 @@
         font-weight: 200;
     }
     .lucky-draw-button{
-        width: 210px;
+        width: 190px;
         height: 30px;
         cursor: pointer;
         border-radius: 10px;
@@ -706,60 +771,36 @@
         left: 58%;
     }
     .lucky-draw-button{
-        width: 340px;
-        height: 30px;
-        cursor: pointer;
-        border-radius: 10px;
-        border: none;
-        color: white;
-        font-size: 12px;
-        font-weight: 400;
-        letter-spacing: 0.1em;
-        background-color: #17A40B;
+        width: 275px;
     }
     .farm-minting-div{
         position: absolute;
-        width: 62%;
-        height: 33%;
-        left: 15%;
+        width: 52%;
+        height: 30%;
+        left: 14%;
         top:10%;
-        background: radial-gradient(50% 50%at 50% 50%,
-                rgba(255, 255, 255, 0.4),
-                rgba(165, 165, 165, 0.3));
-        border-radius: 20px;
-        flex-direction: row;
     }
     .farm-left-div{
-        background: radial-gradient(50% 50%at 50% 50%,
-                rgba(255, 255, 255, 0.4),
-                rgba(165, 165, 165, 0.3));
-        border-radius: 14px;
-        position: absolute;
-        left:15%;
-        top:45%;
-        width: 19%;
-        height: 44%;
+        left:14%;
+        top:42%;
+        width: 16%;
+        height: 40%;
     }
     .farm-center-div{
-        background: radial-gradient(50% 50%at 50% 50%,
-                rgba(255, 255, 255, 0.4),
-                rgba(165, 165, 165, 0.3));
-        border-radius: 14px;
-        position: absolute;
-        left:36.5%;
-        top:45%;
-        width: 19%;
-        height: 44%;
+        left:32%;
+        top:42%;
+        width: 16%;
+        height: 40%;
     }
     .farm-right-div{
-        background: radial-gradient(50% 50%at 50% 50%,
-        rgba(255, 255, 255, 0.4),
-        rgba(165, 165, 165, 0.3));
-        border-radius: 14px;
+        left:50%;
+        top:42%;
+        width: 16%;
+        height: 40%;
+    }
+    .user-div{
         position: absolute;
-        left:58%;
-        top:45%;
-        width: 19%;
-        height: 44%;
+        top:1%;
+        left: 60%;
     }
 }

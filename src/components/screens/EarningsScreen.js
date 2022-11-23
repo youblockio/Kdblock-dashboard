@@ -179,10 +179,10 @@ const EarningsScreen = (props) => {
         <div className="earning-center-bottom-div">
           <div className="earning-center-top-div-title">24hr Earnings</div>
           <div className="week-button-div">
-            <p>Weak</p>
+            <p className='week-button-div-title'>Weak</p>
           </div>
           <div className="month-button-div">
-            <p>Month</p>
+            <p className='week-button-div-title'>Month</p>
           </div>
           <div className="earning-center-top-div-value">8 KDA</div>
           <div className="earning-center-top-div-subvalue">$ 13 USD</div>

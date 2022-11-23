@@ -274,31 +274,33 @@
     }
     .question-div{
         height: 17%;
+        left: 46%;
     }
     .headset-div{
         height: 17%;
+        left:69%;
     }
     .setting-left-div{
         top:30%;
         left: 16%;
-        width: 25%;
-        height: 60%;
+        width: 22%;
+        height: 56%;
     }
     .setting-center-div{
         top:30%;
-        left: 43%;
-        width: 25%;
-        height: 60%;
+        left: 40%;
+        width: 22%;
+        height: 56%;
     }
     .setting-right-div{
         top:30%;
-        left: 70%;
-        width: 25%;
-        height: 60%;
+        left: 64%;
+        width: 23%;
+        height: 56%;
     }
     .setting-left-wallet-button-div{
         text-align: center;
-        margin-top: 60%;
+        margin-top: 65%;
     }
 }
 @media screen and (max-width: 420px){
@@ -417,7 +419,7 @@
         border: 1px solid #0f4658;
         background-color: transparent;
         border-radius: 16px;
-        width: 460px;
+        width: 400px;
         height: 40px;
     }
     .setting-left-title{
@@ -439,35 +441,38 @@
     }
     .swap-div{
         top:10%;
-        width: 9%;
+        width: 8%;
         height: 16%;
+        left: 20%;
     }
     .question-div{
-        width: 9%;
+        width: 8%;
         height: 16%;
         text-align: center;
+        left: 42%;
     }
     .headset-div{
-        width: 9%;
+        width: 8%;
         height: 16%;
         text-align: center;
+        left: 64%;
     }
     .setting-left-div{
-        top:30%;
-        left: 16%;
-        width: 24%;
-        height: 60%;
+        top:29%;
+        left: 14%;
+        width: 20%;
+        height: 52%;
     }
     .setting-center-div{
-        top:30%;
-        left: 43%;
-        width: 24%;
-        height: 60%;
+        top:29%;
+        left: 36%;
+        width: 20%;
+        height: 52%;
     }
     .setting-right-div{
-        top:30%;
-        left: 70%;
-        width: 24%;
-        height: 60%;
+        top:29%;
+        left: 58%;
+        width: 20%;
+        height: 52%;
     }
 }
