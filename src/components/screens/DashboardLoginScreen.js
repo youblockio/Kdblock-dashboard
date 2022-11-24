@@ -9,6 +9,8 @@ const DashboardLoginScreen = () => {
     const connectWithMetamask = useMetamask();
     const address = useAddress();
 
+    const user = JSON.parse(localStorage.getItem('user'))
+
 
     const navigate = useNavigate();
   return (
@@ -41,7 +43,7 @@ const DashboardLoginScreen = () => {
             <div className="wallet-text">connect wallet</div>
             </button>
         </div>
-        <div className="main-wallet-address-div">Wallet Address: {address}</div>
+        <div className="main-wallet-address-div">Wallet Address: {address || user && (user.account.account).slice(0, 30)}</div>
         <div className="main-enter-button">
             <button className="enter-button" onClick={(e) => {e.preventDefault(); navigate("/config");}}>
             Enter Dashboard</button>
