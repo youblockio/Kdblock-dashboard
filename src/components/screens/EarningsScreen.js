@@ -26,6 +26,8 @@ const EarningsScreen = (props) => {
   const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
   const thisMonth = months[current.getMonth()];
 
+  const user = JSON.parse(localStorage.getItem('user'))
+
   return (
     <div className="Earning-main-div">
       <div className="menu-div">
@@ -58,7 +60,7 @@ const EarningsScreen = (props) => {
         </div>
       </div>
       <div className="user-div">
-                <div className="user-wallet-address">1F1tAaz5x1HUXr0i...</div>
+                <div className="user-wallet-address">{user && (user.account.account).slice(0, 30)}</div>
                 <div className="user-disconnect-text">Disconnect</div>
                 <div className="user-disconnect-button-div">
                     <img

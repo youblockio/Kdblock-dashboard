@@ -41,7 +41,7 @@ const DashboardLoginScreen = () => {
             <div className="wallet-text">connect wallet</div>
             </button>
         </div>
-        <div className="main-wallet-address-div">Wallet Address: 0xaA2C5EB5c35f26402CedDB9a8c50f12273ef8F65</div>
+        <div className="main-wallet-address-div">Wallet Address: {address}</div>
         <div className="main-enter-button">
             <button className="enter-button" onClick={(e) => {e.preventDefault(); navigate("/config");}}>
             Enter Dashboard</button>

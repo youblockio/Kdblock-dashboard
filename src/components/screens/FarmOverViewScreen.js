@@ -39,6 +39,8 @@ const FarmOverViewScreen = () => {
         localStorage.removeItem("user");
         // navigate('/')
     }
+
+    const user = JSON.parse(localStorage.getItem('user'))
   
   return (
     <div className="setting-main-div">
@@ -72,7 +74,7 @@ const FarmOverViewScreen = () => {
                 </div>
             </div>
             <div className="user-div">
-                <div className="user-wallet-address">1F1tAaz5x1HUXr0i...</div>
+                <div className="user-wallet-address">{user && (user.account.account).slice(0, 30)}</div>
                 <div className="user-disconnect-text" onClick={disconnectWallet}>Disconnect</div>
                 <div className="user-disconnect-button-div">
                     <img
