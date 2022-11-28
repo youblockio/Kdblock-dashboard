@@ -239,3 +239,20 @@
         height: 1120px;
     }
 }
+
+@media screen and (min-width: 2555px){
+    .config-minting-div{
+        position: absolute;
+        width: 52%;
+        height: 30%;
+        left: 10%;
+        top:10%;
+    }
+    .config-div{
+        position: absolute;
+        width: 52%;
+        height: 35%;
+        left: 10%;
+        top:42%;
+    }
+}

@@ -274,6 +274,25 @@
 }
 
 @media screen and (min-width: 2550px){
+    .minting-div {
+        position: absolute;
+        width: 52%;
+        height: 30%;
+        left: 10%;
+        top:10%;
+    }
+    .minting-bottom-div{
+        position: absolute;
+        width: 52%;
+        height: 35%;
+        left: 10%;
+        top:42%;
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        border-radius: 20px;
+        flex-direction: row;
+    }
     .minting-subtitle{
         position: absolute;
         left:57%;
