@@ -267,13 +267,31 @@
     }
 }
 
-@media screen and (min-width: 1550px){
-    .main{
-        height: 1120px;
-    }
-}
+
 
 @media screen and (min-width: 2550px){
+    .main{
+        height: 941px;
+    }
+    .minting-div {
+        position: absolute;
+        width: 52%;
+        height: 35%;
+        left: 15%;
+        top:12%;
+    }
+    .minting-bottom-div{
+        position: absolute;
+        width: 52%;
+        height: 40%;
+        left: 15%;
+        top:50%;
+        background: radial-gradient(50% 50%at 50% 50%,
+                rgba(255, 255, 255, 0.4),
+                rgba(165, 165, 165, 0.3));
+        border-radius: 20px;
+        flex-direction: row;
+    }
     .minting-subtitle{
         position: absolute;
         left:57%;
