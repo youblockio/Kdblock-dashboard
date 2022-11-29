@@ -11,6 +11,7 @@ import disconnect from "../assets/SignOut.png";
 import userImage from "../assets/user.png";
 import { useNavigate } from "react-router-dom";
 import xwallet from "../assets/xWallet.png";
+import { useAddress } from "@thirdweb-dev/react";
 
 const FarmOverViewScreen = () => {
     const navigate = useNavigate();
@@ -26,7 +27,7 @@ const FarmOverViewScreen = () => {
 
         //   navigate('/farm')
     }
-
+    const address = useAddress();
     const disconnectWallet = async () => {
 
         const { kadena } = window;
@@ -74,7 +75,7 @@ const FarmOverViewScreen = () => {
                 </div>
             </div>
             <div className="user-div">
-                <div className="user-wallet-address">{user && (user.account.account).slice(0, 30)}</div>
+                <div className="user-wallet-address">{address.slice(0, 30)}</div>
                 <div className="user-disconnect-text" onClick={disconnectWallet}>Disconnect</div>
                 <div className="user-disconnect-button-div">
                     <img
@@ -119,9 +120,9 @@ const FarmOverViewScreen = () => {
             <div className="setting-left-div">
                 <div className="earning-center-title">Current Payout Address</div>
                 <div className="setting-left-first-input-div">
-                    <input
-                    placeholder=''
-                    className="setting-left-first-input" />
+                    <div className="setting-left-first-input" style={{color:'white',padding:'5px',fontSize:'14px',textAlign:'center'}}>
+                    {user && (user.account.account).slice(0, 30)}
+                    </div>
                 </div>
                 <div className="setting-left-title">Connect your Kadena wallet address for payouts </div>
                 <div className="setting-left-wallet-button-div">

@@ -8,10 +8,6 @@ import { useMetamask,useAddress } from "@thirdweb-dev/react";
 const DashboardLoginScreen = () => {
     const connectWithMetamask = useMetamask();
     const address = useAddress();
-
-    const user = JSON.parse(localStorage.getItem('user'))
-
-
     const navigate = useNavigate();
   return (
     <div className="main">
@@ -35,17 +31,17 @@ const DashboardLoginScreen = () => {
         <div className="minting-bottom-div-title">WELCOME</div>
         <div className="minting-bottom-div-subtitle">Connect your wallet with KDBLOCK NFT</div>
         <div className="main-connect-button-div">
-            <button className="connect-button" onClick={connectWithMetamask}>
+           {!address && <button className="connect-button" onClick={connectWithMetamask}>
             <img
             src={metamsk}
             alt=''
             className="metamsk" />
             <div className="wallet-text">connect wallet</div>
-            </button>
+            </button> }
         </div>
-        <div className="main-wallet-address-div">Wallet Address: {address || user && (user.account.account).slice(0, 30)}</div>
+        <div className="main-wallet-address-div">Wallet Address: {address}</div>
         <div className="main-enter-button">
-            <button className="enter-button" onClick={(e) => {e.preventDefault(); navigate("/config");}}>
+            <button className="enter-button" onClick={(e) => {e.preventDefault(); if(address){navigate("/farm")};}}>
             Enter Dashboard</button>
         </div>
         </div>

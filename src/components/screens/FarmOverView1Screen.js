@@ -13,6 +13,7 @@ import bronze from "../assets/bronze.png";
 import calender from "../assets/calender.png";
 import "../styles/farmover1.css";
 import { useNavigate } from "react-router-dom";
+import { useAddress } from "@thirdweb-dev/react";
 
 
 const FarmOverView1Screen = () => {
@@ -24,6 +25,7 @@ const FarmOverView1Screen = () => {
     const thisMonth = months[current.getMonth()];
 
     const navigate = useNavigate();
+    const address = useAddress();
 
     const user = JSON.parse(localStorage.getItem('user'))
 
@@ -72,7 +74,7 @@ const FarmOverView1Screen = () => {
                 </div>
             </div>
             <div className="user-div">
-                <div className="user-wallet-address">{user && (user.account.account).slice(0, 30)}</div>
+                <div className="user-wallet-address">{address.slice(0, 30)}</div>
                 <div className="user-disconnect-text" onClick={disconnect}>Disconnect</div>
                 <div className="user-disconnect-button-div">
                     <img
