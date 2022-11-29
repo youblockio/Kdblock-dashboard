@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<DashboardLoginScreen />} />
-          <Route path="/config" element={<DashboardConfigScreen />} />
+          {/* <Route path="/config" element={<DashboardConfigScreen />} /> */}
           <Route path="/farm" element={<FarmOverView1Screen />} />
           <Route path="/earning" element={<EarningsScreen />} />
           <Route path="/setting" element={<FarmOverViewScreen />} />
