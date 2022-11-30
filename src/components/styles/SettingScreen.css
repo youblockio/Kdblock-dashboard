@@ -271,36 +271,50 @@
     }
     .swap-div{
         height: 17%;
+        left: 21%;
     }
     .question-div{
         height: 17%;
-        left: 46%;
+        left: 43%;
     }
     .headset-div{
         height: 17%;
-        left:69%;
+        left:65%;
     }
     .setting-left-div{
         top:30%;
         left: 16%;
-        width: 22%;
-        height: 56%;
+        width: 20%;
+        height: 50%;
     }
     .setting-center-div{
         top:30%;
-        left: 40%;
-        width: 22%;
-        height: 56%;
+        left: 38%;
+        width: 20%;
+        height: 50%;
     }
     .setting-right-div{
         top:30%;
-        left: 64%;
-        width: 23%;
-        height: 56%;
+        left: 60%;
+        width: 20%;
+        height: 50%;
     }
     .setting-left-wallet-button-div{
         text-align: center;
-        margin-top: 65%;
+        margin-top: 60%;
+    }
+    .setting-left-title{
+        position: absolute;
+        top:23%;
+        left:10%;
+        color: white;
+        font-size: 18px;
+        letter-spacing: 0.01em;
+    }
+    .setting-left-first-input{
+        border-radius: 16px;
+        width: 220px;
+        height: 30px;
     }
 }
 @media screen and (max-width: 420px){

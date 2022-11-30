@@ -76,13 +76,14 @@ const FarmOverView1Screen = () => {
                 </div>
             </div>
             <div className="user-div">
-                <div className="user-wallet-address">{address && address.slice(38, 42)}</div>
+                <div className="user-wallet-address">....{address && address.slice(38, 42)}</div>
                 <div className="user-disconnect-text" onClick={()=>{disconnectMeta(); navigate('/')}}>Disconnect</div>
                 <div className="user-disconnect-button-div">
                     <img
                         src={disConnect}
                         alt=''
-                        className="disconnect" />
+                        className="disconnect"
+                        onClick={()=>{disconnectMeta(); navigate('/')}} />
                 </div>
                 <div className="user-image-div">
                     <img

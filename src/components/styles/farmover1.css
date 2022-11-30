@@ -21,6 +21,7 @@
 .user-wallet-address{
     position: absolute;
     top:2%;
+    left: 30px;
     font-size: 16px;
     color: white;
 }
@@ -33,7 +34,7 @@
 }
 .user-disconnect-button-div{
     position: absolute;
-    top: 30px;
+    top: 27px;
     left: 110px;
     cursor: pointer;
 }
@@ -434,27 +435,27 @@
     }
     .farm-minting-div{
         position: absolute;
-        width: 64%;
+        width: 61%;
         height: 33%;
         left: 18%;
     }
     .farm-left-div{
         left:18%;
         top:45%;
-        width: 20%;
-        height: 42%;
+        width: 19%;
+        height: 40%;
     }
     .farm-center-div{
-        left:40%;
+        left:39%;
         top:45%;
-        width: 20%;
-        height: 42%;
+        width: 19%;
+        height: 40%;
     }
     .farm-right-div{
-        left:62%;
+        left:60%;
         top:45%;
-        width: 20%;
-        height: 42%;
+        width: 19%;
+        height: 40%;
     }
     .lucky-draw-top-div-title{
         color: white;
@@ -522,7 +523,7 @@
         font-weight: 200;
     }
     .lucky-draw-button{
-        width: 190px;
+        width: 185px;
         height: 30px;
         cursor: pointer;
         border-radius: 10px;
@@ -533,6 +534,12 @@
         letter-spacing: 0.1em;
         background-color: #17A40B;
     }
+    .user-div{
+        position: absolute;
+        top:2%;
+        left: 75%;
+    }
+    
 }
 @media screen and (max-width: 420px){
     .farm-main-div{
