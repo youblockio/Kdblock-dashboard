@@ -13,7 +13,7 @@ import bronze from "../assets/bronze.png";
 import calender from "../assets/calender.png";
 import "../styles/farmover1.css";
 import { useNavigate } from "react-router-dom";
-import { useAddress } from "@thirdweb-dev/react";
+import { useAddress,useDisconnect } from "@thirdweb-dev/react";
 
 
 const FarmOverView1Screen = () => {
@@ -26,21 +26,24 @@ const FarmOverView1Screen = () => {
 
     const navigate = useNavigate();
     const address = useAddress();
+    const disconnectMeta = useDisconnect()
 
     const user = JSON.parse(localStorage.getItem('user'))
 
-    const disconnect = async () => {
+    // const disconnect = async () => {
 
-        const { kadena } = window;
-        const dis = await kadena.request({
-            method: 'kda_disconnect',
-            networkId: 'mainnet01 ',
+    //     const { kadena } = window;
+    //     const dis = await kadena.request({
+    //         method: 'kda_disconnect',
+    //         networkId: 'mainnet01 ',
 
-        });
+    //     });
 
-        localStorage.removeItem("user");
-        navigate('/')
-    }
+    //     localStorage.removeItem("user");
+    //     navigate('/')
+    // }
+
+    // if(!address){navigate('/')}
 
     return (
         <div className="farm-main-div">
@@ -74,8 +77,8 @@ const FarmOverView1Screen = () => {
                 </div>
             </div>
             <div className="user-div">
-                <div className="user-wallet-address">{address.slice(0, 30)}</div>
-                <div className="user-disconnect-text" onClick={disconnect}>Disconnect</div>
+                <div className="user-wallet-address">{address && address.slice(0, 30)}</div>
+                <div className="user-disconnect-text" onClick={()=>{disconnectMeta(); navigate('/')}}>Disconnect</div>
                 <div className="user-disconnect-button-div">
                     <img
                         src={disConnect}

@@ -16,7 +16,7 @@ import silver from "../assets/silver.png";
 import bronze from "../assets/bronze.png";
 import calender from "../assets/calender.png";
 import { useNavigate, NavLink } from "react-router-dom";
-import { useAddress } from "@thirdweb-dev/react";
+import { useAddress,useDisconnect } from "@thirdweb-dev/react";
 
 const EarningsScreen = (props) => {
   const navigate = useNavigate();
@@ -29,6 +29,9 @@ const EarningsScreen = (props) => {
 
   const user = JSON.parse(localStorage.getItem('user'))
   const address = useAddress();
+  const disconnectMeta = useDisconnect()
+
+
 
   return (
     <div className="Earning-main-div">
@@ -62,8 +65,8 @@ const EarningsScreen = (props) => {
         </div>
       </div>
       <div className="user-div">
-                <div className="user-wallet-address">{address.slice(0, 30)}</div>
-                <div className="user-disconnect-text">Disconnect</div>
+                <div className="user-wallet-address">{address && address.slice(0, 30)}</div>
+                <div className="user-disconnect-text" onClick={()=>{disconnectMeta(); navigate('/')}}>Disconnect</div>
                 <div className="user-disconnect-button-div">
                     <img
                     src={disconnect}
