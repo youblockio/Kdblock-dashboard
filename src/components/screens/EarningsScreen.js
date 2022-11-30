@@ -65,7 +65,7 @@ const EarningsScreen = (props) => {
         </div>
       </div>
       <div className="user-div">
-                <div className="user-wallet-address">{address && address.slice(0, 30)}</div>
+                <div className="user-wallet-address">{address && address.slice(38, 42)}</div>
                 <div className="user-disconnect-text" onClick={()=>{disconnectMeta(); navigate('/')}}>Disconnect</div>
                 <div className="user-disconnect-button-div">
                     <img
